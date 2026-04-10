@@ -96,7 +96,7 @@ body {
 /* Logo Styles */
 .logo-container {
     width: 100%;
-    margin-top: -10vh;
+    margin-top: -5vh;
     /* Slightly pulls the logo upwards */
     margin-bottom: 5vh;
     /* Consistent spacing below the logo */
