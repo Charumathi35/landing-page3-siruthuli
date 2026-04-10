@@ -95,18 +95,22 @@ body {
 /* Logo Styles */
 .logo-container {
     position: absolute;
-    size: 100px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: clamp(20px, 5vh, 40px);
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
+    pointer-events: none; /* Allows clicking things behind the transparent part of container */
 }
 
 .logo {
-    height: clamp(80px, 15vw, 120px);
+    height: clamp(60px, 12vw, 100px);
     width: auto;
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
     transition: transform 0.4s ease;
+    pointer-events: auto; /* Re-enable clicks on the logo itself */
 }
 
 .logo:hover {
@@ -268,12 +272,9 @@ body {
         gap: 10px;
     }
 
+    /* Logo center fix already handled by .logo-container in main styles */
     .logo-container {
-        position: absolute;
-        top: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 10;
+        top: clamp(15px, 4vh, 30px);
     }
 
     .time-block {

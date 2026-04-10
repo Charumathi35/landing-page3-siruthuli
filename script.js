@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Set the date we're counting down to
-    const countDownDate = new Date("April 15, 2026 00:00:00").getTime();
+    const countDownDate = new Date("April 15, 2026 10:00:00").getTime();
 
     // Update the count down every 1 second
-    const x = setInterval(function() {
+    const x = setInterval(function () {
 
         // Get today's date and time
         const now = new Date().getTime();
