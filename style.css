@@ -82,27 +82,24 @@ body {
 
 /* Main Layout */
 .content {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    position: relative;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
 }
 
 /* Logo Styles */
 .logo-container {
-    position: absolute;
-    top: clamp(20px, 5vh, 40px);
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    pointer-events: none; /* Allows clicking things behind the transparent part of container */
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -110,7 +107,8 @@ body {
     width: auto;
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
     transition: transform 0.4s ease;
-    pointer-events: auto; /* Re-enable clicks on the logo itself */
+    pointer-events: auto;
+    /* Re-enable clicks on the logo itself */
 }
 
 .logo:hover {
@@ -121,6 +119,9 @@ body {
     max-width: 900px;
     width: 100%;
     z-index: 1;
+    margin-top: auto;
+    margin-bottom: clamp(30px, 8vh, 80px);
+    /* Pushes the content slightly towards the bottom */
 }
 
 /* Typography */
@@ -274,7 +275,7 @@ body {
 
     /* Logo center fix already handled by .logo-container in main styles */
     .logo-container {
-        top: clamp(15px, 4vh, 30px);
+        margin-bottom: 10px;
     }
 
     .time-block {
