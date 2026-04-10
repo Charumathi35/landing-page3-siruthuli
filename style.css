@@ -129,7 +129,7 @@ body {
     font-size: 0.9rem;
     letter-spacing: 0.4em;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced from 20px */
     font-weight: 300;
     opacity: 0.8;
 }
@@ -144,17 +144,17 @@ body {
 }
 
 .subtitle {
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
     font-weight: 300;
     font-style: italic;
     font-family: var(--font-heading);
-    margin-bottom: 50px;
+    margin-bottom: clamp(20px, 4vh, 40px); /* Reduced from 50px */
     opacity: 0.9;
 }
 
 /* Timer Styles */
 .timer-section {
-    margin-bottom: 60px;
+    margin-bottom: clamp(20px, 5vh, 45px); /* Reduced from 60px */
 }
 
 .countdown {
